@@ -21,12 +21,12 @@
 		"context": "Editor && vim_mode != insert && !VimWaiting && !VimObject",
 		"bindings": {
 			"shift-j": "editor::MoveLineDown",
-			"shift-k": "editor::MoveLineUp"
+			"shift-k": "editor::MoveLineUp",
+			"ctrl-n": "workspace::ToggleLeftDock"
 		}
 	},
 	{
 		"bindings": {
-			"ctrl-n": "workspace::ToggleLeftDock",
 			"shift-h": "tab_switcher::Toggle"
 		}
 	},
