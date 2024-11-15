@@ -36,7 +36,6 @@ return {
   {
     "christoomey/vim-tmux-navigator",
   },
-
   {
     "nvim-treesitter/nvim-treesitter",
     lazy = false,

@@ -23,6 +23,7 @@ map({ "n", "v" }, "<leader>mp", function()
       })
     end, { desc = "Format file or range (in visual mode)" })
 
+
 -- alt+ (j or k) to move the selected line up or download
 map({"n","v"}, "<A-j>", ":m '>+1<cr>gv=gv", { desc = "Move line down" })
 map({"n","v"}, "<A-k>", ":m '<-2<cr>gv=gv" , { desc = "Move line up" })
