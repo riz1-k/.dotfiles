@@ -6,9 +6,6 @@ local keymap = vim.keymap -- for conciseness
 ---------------------
 -- General Keymaps -------------------
 
--- use jk to exit insert mode
-keymap.set("i", "jk", "<ESC>", { desc = "Exit insert mode with jk" })
-
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
@@ -44,3 +41,8 @@ keymap.set(
 	"<cmd>Telescope buffers sort_mru=true sort_lastused=true initial_mode=normal <cr>",
 	{ desc = "[P]Open telescope buffers" }
 )
+
+--selected line management
+-- use shift + j and shift + k to move selected lines up and down
+vim.api.nvim_set_keymap("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selected lines down" })
+vim.api.nvim_set_keymap("v", "K", ":m '<0<CR>gv=gv", { desc = "Move selected lines up" })
