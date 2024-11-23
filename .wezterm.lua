@@ -21,7 +21,7 @@ config.window_padding = {
 	bottom = 0,
 }
 config.max_fps = 120
-
+config.warn_about_missing_glyphs = false
 config.colors = {
 	foreground = "#CDD6F4", -- Text color
 	background = "#1E1E2E", -- Background color
