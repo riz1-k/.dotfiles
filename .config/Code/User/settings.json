@@ -90,7 +90,7 @@
     }
   ],
 
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "top",
   "window.customTitleBarVisibility": "auto",
   "vim.useSystemClipboard": true,
   "codeium.enableCodeLens": false,
