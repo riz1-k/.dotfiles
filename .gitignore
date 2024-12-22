@@ -1,1 +1,8 @@
-projects/
+*
+!.gitignore
+!.zshrc
+!.tmux.conf
+!.wezterm.lua
+!.config/nvim
+!.config/Code/User
+!.config/zed
