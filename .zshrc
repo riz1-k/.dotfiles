@@ -66,4 +66,18 @@ esac
 # pnpm end
 
 #flutter
-export PATH="$PATH:`pwd`/flutter/bin"
+export PATH="$PATH:/usr/local/flutter/bin"
+
+#java
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export PATH=$JAVA_HOME/bin:$PATH
+
+export ANDROID_HOME=/home/riz1/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
+
+# Turso
+export PATH="$PATH:/home/riz1/.turso"
