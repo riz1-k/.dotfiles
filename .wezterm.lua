@@ -9,12 +9,9 @@ config.window_decorations = "RESIZE"
 config.check_for_updates = false
 config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = false
-config.font_size = 11.5
-config.font = wezterm.font("Cascadia Code", { weight = "Medium" })
-config.line_height = 2
--- config.font_size = 10
--- config.font = wezterm.font(".", { weight = "Bold" })
--- config.line_height = 2
+config.font_size = 13.5
+config.font = wezterm.font(".", { weight = "Medium" })
+config.line_height = 2.2
 config.enable_tab_bar = false
 config.use_resize_increments = true
 config.window_padding = {
