@@ -11,7 +11,7 @@ config.use_fancy_tab_bar = false
 config.tab_bar_at_bottom = false
 config.font_size = 13.5
 config.font = wezterm.font(".", { weight = "Medium" })
-config.line_height = 2.2
+config.line_height = 1.75
 config.enable_tab_bar = false
 config.use_resize_increments = true
 config.window_padding = {
