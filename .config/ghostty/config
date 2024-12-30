@@ -1,0 +1,12 @@
+theme = rose-pine
+background = #000000
+background-opacity = 0.8
+background-blur-radius = 40
+fullscreen = true
+
+font-family = JetBrainsMono Nerd Font 
+font-size = 15
+cursor-style = block
+cursor-style-blink = false
+shell-integration-features = no-cursor 
+adjust-cell-height = 60%
