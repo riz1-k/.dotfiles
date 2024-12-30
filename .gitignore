@@ -6,4 +6,5 @@
 !.config/
 !.config/nvim/
 !.config/Code/User/
+!.config/ghostty/
 !.config/zed/
