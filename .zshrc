@@ -4,11 +4,30 @@ fi
 
 alias nv="nvim"
 alias gt="git"
-alias pp="pnpm"
 alias cl="clear"
 alias su="sudo"
 alias e="exit"
 alias tm="tmux"
+# Function to simplify git add, commit, and push workflow
+gg() {
+    if [ -z "$1" ]; then
+        echo "Error: Commit message is required"
+        echo "Usage: gg \"commit message\" [branch]"
+        return 1
+    fi
+    git add .
+    git commit -m "$1"
+    if [ -z "$2" ]; then
+        branch=$(git rev-parse --abbrev-ref HEAD)
+    else
+        branch="$2"
+    fi
+    if ! git rev-parse --abbrev-ref @{u} >/dev/null 2>&1; then
+        git push --set-upstream origin "$branch"
+    else
+        git push
+    fi
+}
 
 # ---- Eza (better ls) -----
 alias ls="eza --icons=auto"
@@ -81,3 +100,5 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 
 # Turso
 export PATH="$PATH:/home/riz1/.turso"
+#zig
+export PATH="/opt/zig:$PATH"
